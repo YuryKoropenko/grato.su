@@ -1,0 +1,33 @@
+@import "bourbon/bourbon"
+@import "sass/_custom"
+
+/*Внешние блоки*/
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "OfficinaSansBook", sans-serif
+	overflow-x: hidden
+
+.header
+	border-bottom: 1px solid white
+	height: 60px
+	line-height: 40px
+	background-color: rgba(255, 255, 255, 0.5)
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)
+	position: absolute
+	box-sizing: border-box
+	top: 0
+	left: 0
+	right: 0
+	padding: 0 25px
+	&__h-logo
+		padding: 4px 0
+	&__right
+		text-align: right
+	&__h-nav
+		display: inline-block
+	&__h-order
+		display: inline-block

@@ -1,0 +1,66 @@
+@import "bourbon/bourbon"
+@import "sass/_blocks"
+
+/*Компоненты*/
+
+.h-logo
+	display: inline-block
+	&__img
+		display: block
+		width: 175px
+
+.h-nav
+	font-size: 0
+	&__item
+		display: inline-block
+	&__link
+		height: 60px
+		line-height: 60px
+		padding: 0 15px
+		display: block
+		color: #242424
+		font-size: 18px
+		font-family: 'OfficinaSansMedium', sans-serif
+		font-style: normal
+		-webkit-transition: 0.3s ease-in
+		transition: 0.3s ease-in
+		text-decoration: none
+		&::after
+			position: absolute
+			content: ""
+			width: 100%
+			height: 2px
+			background-color: #d50000
+			bottom: -4px
+			left: 0
+			-webkit-transition: 0.3s ease-in
+			transition: 0.3s ease-in
+			-webkit-transform: scaleX(0)
+			transform: scaleX(0)
+			opacity: 0
+
+.h-order
+	font-size: 18px
+	height: 40px
+	line-height: 36px
+	border: 2px solid #d50000
+	background-color: #d50000
+	color: #fff
+	display: block
+	text-decoration: none
+	padding: 0 20px
+	font-family: "OfficinaSansMedium", sans-serif
+	box-shadow: inset 0 0 0 0 transparent
+	border-radius: 3px
+	&::after
+		content: '\f054'
+		margin-left: 10px
+		font-family: 'FontAwesome'
+		opacity: 1
+	&:hover, &:focus, &:active
+		text-decoration: none
+		background-color: #fff
+		color: #d50000
+	&:active
+		background-color: #d50000
+		color: #fff
