@@ -29,3 +29,127 @@ ol, ul
 
 .hidden
 	display: none
+
+/*jquery ui*/
+.ui-selectmenu-button
+	border-radius: 0
+	border: 1px solid #d6d6d6
+	display: block
+	width: 100% !important
+	padding: 0 6px
+	height: 30px
+	line-height: 28px
+	clear: both
+	color: #000
+	background-color: #fff
+	outline: none
+	position: relative
+
+.ui-selectmenu-button::after
+	content: '\f107'
+	color: #fff
+	font-size: 24px
+	line-height: 28px
+	text-align: center
+	font-family: "FontAwesome"
+	background-color: #d50000
+	width: 30px
+	height: 30px
+	position: absolute
+	right: -1px
+	top: -1px
+
+.ui-selectmenu-button-open::after
+	content: '\f106'
+
+.ui-selectmenu-button:active,
+.ui-selectmenu-button:hover,
+.ui-selectmenu-button:focus
+	color: #000 !important
+	background-color: #fff !important
+	border: 1px solid #d6d6d6 !important
+
+.ui-selectmenu-icon 
+	display: none !important
+
+.ui-selectmenu-text
+	margin-right: 0
+	font-size: 14px
+	font-family: "OfficinaSansBook", sans-serif
+
+.ui-menu .ui-menu-item-wrapper
+	height: 30px
+	border: none !important
+	padding: 0 6px
+	font-size: 14px
+	color: #000
+	font-family: "OfficinaSansBook", sans-serif
+	line-height: 30px
+
+.ui-menu .ui-menu-item-wrapper:hover,
+.ui-menu .ui-menu-item-wrapper:focus,
+.ui-menu .ui-menu-item-wrapper:active
+	background-color: #d50000
+	color: #fff
+	border: none
+	margin: 0
+	padding: 0 6px
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	background-color: #d50000
+	color: #fff
+	border: none
+	margin: 0
+	padding: 0 6px
+
+.ui-widget.ui-widget-content
+	max-height: 320px
+	border: 1px solid #d6d6d6
+	border-top: none
+	box-shadow: 0 5px 10px rgba(66, 75, 92, 0.1)
+
+.ui-selectmenu-menu .ui-menu
+	padding-bottom: 0
+	border-radius: 0 !important
+
+/*default*/
+
+.btn
+	height: 50px
+	line-height: 50px
+	text-decoration: none
+	text-align: center
+	display: block
+	font-size: 18px
+	background-color: #d50000
+	color: #fff
+	font-family: "OfficinaSansMedium", sans-serif
+	@include transition(all 0.3s ease-in-out)
+	&::before
+		content: '\f178'
+		font-family: "FontAwesome"
+		color: #d50000
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		display: block
+		position: absolute
+		left: -25px
+		top: 0
+		background-color: #fff
+		@include transition(all 0.3s ease-in-out)
+	&:hover
+		background-color: rgba(#d50000,.8)
+		&::before
+			left: -21px
+
+.p-title
+	font-family: "OfficinaSansMedium", sans-serif
+	font-size: 24px
+	line-height: 30px
+.p-description
+	color: #444
+	p
+		font-family: "OfficinaSansBook"
+	strong
+		font-family: "OfficinaSansBold", sans-serif

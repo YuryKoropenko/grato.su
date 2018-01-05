@@ -16,6 +16,10 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -34,8 +38,23 @@
 				</div>
 				<div class="col-9">
 					<div class="header__right">
+						<div class="header__h-contacts">
+							<div class="h-contacts">
+								<a href="tel:+380501234567" class="h-contacts__phone">
+									+7(921)143-33-33
+								</a>
+								<p class="h-contacts__addr">
+									г.Пенза, ул. Суворова, 151
+								</p>
+							</div>
+						</div>
 						<div class="header__h-nav">
 							<ul class="h-nav">
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Модерн
+									</a>
+								</li>
 								<li class="h-nav__item">
 									<a href="#" class="h-nav__link">
 										Классика
@@ -48,24 +67,194 @@
 								</li>
 								<li class="h-nav__item">
 									<a href="#" class="h-nav__link">
-										Современный стиль
+										Кантри
 									</a>
 								</li>
 							</ul>
 						</div>
+						<!--
 						<div class="header__h-order">
 							<a href="#" class="h-order">
 								Заказать проект
 							</a>
 						</div>
+						-->
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<div class="page">
+		<div class="page__section page__section-baner" style="background-image: url(img/index-baner.jpg);">
+			<div class="page__section-bform">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page__p-application">
+								<div class="p-application">
+									<div class="p-application__question">
+										Хотите увидеть свою будущую <span>кухню?</span>
+									</div>
+									<div class="p-application__top">
+										<span class="p-application__title">
+											Заполните заявку
+										</span>
+										<p class="p-application__subtitle">
+											на бесплатный дизайн-проект в три клика!
+										</p>
+									</div>
+									<div class="p-application__content">
+										<div class="p-application__row">
+											<label for="" class="p-application__label">
+												Имя
+											</label>
+											<input type="text" class="p-application__input" placeholder="Ваше имя">
+										</div>
+										<div class="p-application__row">
+											<label for="" class="p-application__label">
+												E-mail
+											</label>
+											<input type="text" class="p-application__input" placeholder="Ваш e-mail">
+										</div>
+										<div class="p-application__row">
+											<label for="" class="p-application__label">
+												Телефон
+											</label>
+											<input type="text" class="p-application__input p-application__input-phone" placeholder="+7-___-___-__-__">
+										</div>
+										<div class="p-application__row">
+											<label for="" class="p-application__label">
+												Город
+											</label>
+											<select name="p-application__select" id="">
+												<option disabled selected>
+													Выбирите город
+												</option>
+												<option>
+													Москва
+												</option>
+												<option>
+													Санкт-Петербург
+												</option>
+												<option>
+													Волгоград
+												</option>
+												<option>
+													Тверь
+												</option>
+												<option>
+													Пенза
+												</option>
+											</select>
+										</div>
+										<div class="p-application__check">
+											<input type="checkbox" id="p-application-check" checked>
+											<label for="p-application-check">
+												Согласен с обработкой персональных данных
+												<span>
+													Чтобы продолжить установите этот флажок
+												</span>
+											</label>
+										</div>
+										<div class="p-application__wishes">
+											<a href="#">
+												<i></i>
+												Пожелания
+											</a>
+											<div class="p-application__hidden">
+												<textarea name="" id="" placeholder="Пожелания"></textarea>
+											</div>
+										</div>
+										<a href="#" class="p-application__button btn">
+											Отправить заявку
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__section page__section-category">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-title">
+							<h2 class="p-title">
+								Кухни в классическом стиле
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-description">
+							<div class="p-description">
+								<p>
+									Любители интерьеров с кухнями в классическом стиле, как правило, обладают изысканным вкусом и предъявляют высокие требования к качеству мебели. Данное направление в дизайне прошло проверку временем и не утратило актуальность и в наши дни. Классическому стилю присущи благородные декоративные элементы, гармоничная симметричность и элегантность форм. Такая мебель смотрится <strong>в интерьерах</strong> роскошно.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__section page__section-slider">
+			<div class="page__p-catslider">
+				<div class="p-catslider owl-carousel">
+					<a href="img/geos/alegri_gray_all-min.jpg" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+						<div class="p-catslider__bottom">
+							<h2 class="p-catslider__title">
+								Кухня <span style="color: #d50000;">Prestige</span>
+							</h2>
+							<span class="p-catslider__price">
+								Цена от 124 200
+							</span>
+						</div>
+					</a>
+					<a href="img/geos/alegri_gray_all-min.jpg" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+						<div class="p-catslider__bottom">
+							<h2 class="p-catslider__title">
+								Кухня <span style="color: #d50000;">Prestige</span>
+							</h2>
+							<span class="p-catslider__price">
+								Цена от 124 200
+							</span>
+						</div>
+					</a>
+					<a href="img/geos/alegri_gray_all-min.jpg" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+						<div class="p-catslider__bottom">
+							<h2 class="p-catslider__title">
+								Кухня <span style="color: #d50000;">Prestige</span>
+							</h2>
+							<span class="p-catslider__price">
+								Цена от 124 200
+							</span>
+						</div>
+					</a>
+					<a href="img/geos/alegri_gray_all-min.jpg" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+						<div class="p-catslider__bottom">
+							<h2 class="p-catslider__title">
+								Кухня <span style="color: #d50000;">Prestige</span>
+							</h2>
+							<span class="p-catslider__price">
+								Цена от 124 200
+							</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>
