@@ -112,6 +112,16 @@ ol, ul
 	padding-bottom: 0
 	border-radius: 0 !important
 
+.fancybox-close-small:after
+	background-color: #eee
+	&:hover
+		background-color: #eee
+.fancybox-close-small
+	right: -20px
+	top: -20px
+.fancybox-slide>*
+	overflow: visible
+
 /*default*/
 
 .btn
@@ -137,6 +147,7 @@ ol, ul
 		left: -25px
 		top: 0
 		background-color: #fff
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
 		@include transition(all 0.3s ease-in-out)
 	&:hover
 		background-color: rgba(#d50000,.8)

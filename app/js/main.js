@@ -34,8 +34,35 @@ $(function() {
 			}
 		}
 	});
+	$('.sliderpopup__slider').owlCarousel({
+		loop:true,
+		nav:true,
+		items:1
+	});
 
 	/*fancybox вызовы*/
 	$('.p-catslider__item').fancybox();
+
+	/*слайдер hover*/
+	$('.p-catslider__item').hover(function() {
+		$(this).children('.p-catslider__hover').stop(true, false).fadeIn();
+	}, function() {
+		$(this).children('.p-catslider__hover').stop(true, false).fadeOut();
+	});
+
+	/*якоря*/
+
+	$('.h-nav__link').on('click', function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			&& location.hostname == this.hostname) {
+				var $target = $(this.hash);
+				$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+				if ($target.length) {
+					var targetOffset = $target.offset().top;
+					$('html,body').animate({scrollTop: targetOffset}, 500);
+					return false;
+				}
+			}
+	});
 
 });
