@@ -202,6 +202,20 @@ ol, ul {
   font-family: "OfficinaSansBold", sans-serif;
 }
 
+.b-title {
+  color: #242424;
+  font-family: "OfficinaSansMedium", sans-serif;
+  font-size: 36px;
+  display: inline-block;
+}
+
+.b-description {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "OfficinaSansMedium", sans-serif;
+  color: #444;
+}
+
 /*Внешние блоки*/
 body {
   font-size: 14px;
@@ -282,6 +296,19 @@ body {
   padding-bottom: 50px;
 }
 
+.page__section-grato {
+  padding: 50px 0;
+  background-color: #eee;
+}
+
+.page__section-hfamily {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .page__p-application::after {
   clear: both;
   content: "";
@@ -315,6 +342,16 @@ body {
 
 .page__p-catslider:hover .owl-nav {
   display: block;
+}
+
+.page__b-title {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.page__b-description {
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 /*Компоненты*/
@@ -900,4 +937,63 @@ body {
 .p-formcapture__button-wp {
   text-align: center;
   padding-top: 10px;
+}
+
+.p-steps {
+  background-color: #fff;
+  padding: 25px 25px 25px 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  min-height: 213px;
+}
+
+.p-steps::after {
+  content: '';
+  width: 1px;
+  background-color: #ddd;
+  top: 35px;
+  bottom: 35px;
+  display: block;
+  height: auto;
+  position: absolute;
+  left: 24px;
+  z-index: 1;
+}
+
+.p-steps__number {
+  width: 30px;
+  height: 70px;
+  line-height: 70px;
+  background-color: #fff;
+  color: #d50000;
+  font-size: 30px;
+  font-family: "OfficinaSansMedium", sans-serif;
+  position: absolute;
+  left: 10px;
+  text-align: center;
+  top: 50%;
+  margin-top: -35px;
+  z-index: 2;
+}
+
+.p-steps__title {
+  font-size: 24px;
+  line-height: 30px;
+  display: block;
+  padding-bottom: 15px;
+  font-family: "OfficinaSansMedium", sans-serif;
+  color: #d50000;
+}
+
+.p-steps__description {
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  color: #444;
+}
+
+.p-map iframe {
+  display: block;
+  width: 100%;
+  height: 340px;
 }

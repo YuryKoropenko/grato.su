@@ -51,7 +51,6 @@ $(function() {
 	});
 
 	/*якоря*/
-
 	$('.h-nav__link').on('click', function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 			&& location.hostname == this.hostname) {
