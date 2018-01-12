@@ -4,6 +4,9 @@
   .p-steps {
     min-height: 265px;
   }
+  .page__section-advantages .p-steps {
+    min-height: 229px;
+  }
   /**/
 }
 
@@ -37,6 +40,9 @@
   .p-steps {
     min-height: 191px;
   }
+  .page__section-advantages .p-steps {
+    min-height: 157px;
+  }
   /**/
 }
 
@@ -54,10 +60,6 @@
     font-size: 23px;
     padding-bottom: 10px;
   }
-  .h-logo__img {
-    width: 100%;
-    max-height: 51.63px;
-  }
   .p-catslider__item {
     height: 320px;
   }
@@ -67,6 +69,12 @@
   }
   .p-steps {
     min-height: auto;
+  }
+  .page__section-advantages .p-steps {
+    min-height: auto;
+  }
+  .page__section-advantages {
+    padding-top: 30px;
   }
   /**/
 }
@@ -95,8 +103,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .p-formcapture__button {
-    width: auto;
-    margin-left: 25px;
+    width: 100%;
   }
   .p-catslider__item {
     height: 200px;
@@ -137,6 +144,12 @@
   }
   .page__section-hfamily {
     height: 50vh;
+  }
+  .page__section-advantages .page__b-title {
+    padding-bottom: 30px;
+  }
+  .page__section-advantages {
+    padding-bottom: 15px;
   }
   /**/
 }

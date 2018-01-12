@@ -11,12 +11,15 @@ $(function() {
 		$(this).children('span').toggle();
 	});
 
+
+	/*
 	$('.p-application__wishes a').on('click', function() {
 		$(this).toggleClass('active');
 		$(this).parent().children('.p-application__hidden').toggle();
 		$(this).parent().children('.p-application__hidden').children('textarea').focus();
 		return false;
 	});
+	*/
 
 	/*owl вызовы*/
 	$('.p-catslider').owlCarousel({
