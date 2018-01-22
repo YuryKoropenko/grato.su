@@ -37,10 +37,16 @@ $(function() {
 			}
 		}
 	});
+	/*
 	$('.sliderpopup__slider').owlCarousel({
 		loop:true,
 		nav:true,
-		items:1
+		items:1,
+		dotsClass:'.p-catslider .owl-item',
+	});
+	*/
+	$('.p-catslider .p-catslider__item').fancybox({
+		
 	});
 
 	/*fancybox вызовы*/

@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
 	<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/jquery-mousewheel/jquery.mousewheel.min.js">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -251,7 +252,7 @@
 		<div class="page__section page__section-slider">
 			<div class="page__p-catslider">
 				<div class="p-catslider owl-carousel">
-					<a href="#sliderpopup1" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+					<a data-fancybox="image" href="img/geos/alegri_gray_all-min.jpg" class="p-catslider__item p-catslider__item-1" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
 						<div class="p-catslider__hover"></div>
 						<div class="p-catslider__bottom">
 							<h2 class="p-catslider__title">
@@ -262,7 +263,7 @@
 							</span>
 						</div>
 					</a>
-					<a href="#sliderpopup1" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+					<a data-fancybox="image" href="img/geos/Arli_karmen2-min.jpg" class="p-catslider__item p-catslider__item-2" style="background-image: url(img/geos/Arli_karmen2-min.jpg);">
 						<div class="p-catslider__hover"></div>
 						<div class="p-catslider__bottom">
 							<h2 class="p-catslider__title">
@@ -273,7 +274,7 @@
 							</span>
 						</div>
 					</a>
-					<a href="#sliderpopup1" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+					<a data-fancybox="image" href="img/geos/alegri_gray_all-min.jpg" class="p-catslider__item p-catslider__item-3" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
 						<div class="p-catslider__hover"></div>
 						<div class="p-catslider__bottom">
 							<h2 class="p-catslider__title">
@@ -284,7 +285,7 @@
 							</span>
 						</div>
 					</a>
-					<a href="#sliderpopup1" class="p-catslider__item" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
+					<a data-fancybox="image" href="img/geos/alegri_gray_all-min.jpg" class="p-catslider__item p-catslider__item-4" style="background-image: url(img/geos/alegri_gray_all-min.jpg);">
 						<div class="p-catslider__hover"></div>
 						<div class="p-catslider__bottom">
 							<h2 class="p-catslider__title">
@@ -674,16 +675,16 @@
 
 	<div class="popup sliderpopup" id="sliderpopup1" style="display: none;">
 		<div class="sliderpopup__slider owl-carousel">
-			<div class="sliderpopup__item">
+			<div class="sliderpopup__item" name="sl1">
 				<img src="img/geos/alegri_gray_all-min.jpg" alt="alt" class="sliderpopup__img">
 			</div>
-			<div class="sliderpopup__item">
+			<div class="sliderpopup__item" name="sl2">
+				<img src="img/geos/Arli_karmen2-min.jpg" alt="alt" class="sliderpopup__img">
+			</div>
+			<div class="sliderpopup__item" name="sl3">
 				<img src="img/geos/alegri_gray_all-min.jpg" alt="alt" class="sliderpopup__img">
 			</div>
-			<div class="sliderpopup__item">
-				<img src="img/geos/alegri_gray_all-min.jpg" alt="alt" class="sliderpopup__img">
-			</div>
-			<div class="sliderpopup__item">
+			<div class="sliderpopup__item" name="sl4">
 				<img src="img/geos/alegri_gray_all-min.jpg" alt="alt" class="sliderpopup__img">
 			</div>
 		</div>
